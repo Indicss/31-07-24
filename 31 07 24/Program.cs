@@ -32,7 +32,6 @@ public class Program
 {
     public static void Main()
     {
-        // Test StringValidator
         string email = "jalbaoleg00@gmail.com";
         string invalidEmail = "testexample.com";
         string phoneNumber = "069486039";
@@ -43,7 +42,6 @@ public class Program
         Console.WriteLine($"Is '{phoneNumber}' a valid phone number? {StringValidator.IsPhoneNumber(phoneNumber)}");
         Console.WriteLine($"Is '{invalidPhoneNumber}' a valid phone number? {StringValidator.IsPhoneNumber(invalidPhoneNumber)}");
 
-        // Test ListManipulator
         List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 5, 6, 7, 8, 9, 9, 10 };
         Console.WriteLine($"Max value in list: {ListManipulator.FindMax(numbers)}");
         List<int> uniqueNumbers = ListManipulator.RemoveDuplicates(numbers);
